@@ -1,103 +1,140 @@
+//
+// Application Launcher
+// --------------------------------------------------
 
-.pf-application-launcher-icon {
-    color: white;
-}
+.applauncher-pf {
 
-.pf-application-launcher-link {
-    color: black;
-}
+  .applauncher-pf-title {
+    display: none;
+  }
 
-.pf-application-launcher-entry {
+  .dropdown-menu {
+    padding: 9px;
+    min-width: 240px;
+  }
+
+  .applauncher-pf-link {
+    border: 1px solid @color-pf-white;
+    padding: 6px 10px;
+
+    &:hover {
+      color: @color-pf-blue-400;
+      text-decoration: none;
+      background-color: transparent;
+      border: 1px solid @color-pf-black-400;
+    }
+  }
+
+  .applauncher-pf-link-icon,
+  .applauncher-pf-link-title {
     display: inline-block;
-    padding: 10px;
-    text-align: center;
-    min-width: 90px;
-    width: 50%;
-    cursor: pointer;
-
-    span {
-        display:block;
-    }
-}
-
-.pf-application-launcher-list {
-    display: block;
-    text-align: left;
-    min-width: inherit;
     width: auto;
+  }
 
-    span {
-        display: inline-block;
-        padding-right: 4px;
+  .applauncher-pf-link-icon {
+    padding-right: 4px;
+  }
+
+  .applauncher-pf-list-default {
+
+    .applauncher-pf-entry {
+      display: inline-block;
+      width: 49%;
+      min-width: 0;
+      text-align: center;
+      vertical-align: top;
     }
+
+    .applauncher-pf-link-icon,
+    .applauncher-pf-link-title {
+      display: block;
+      padding: 0;
+    }
+
+    .applauncher-pf-link-icon {
+      padding-bottom: 4px;
+    }
+
+    .applauncher-pf-link-title {
+      word-wrap: break-word;
+      white-space: normal;
+    }
+  }
 }
 
-.pf-application-launcher-entry {
-    border-color: #fff;
-    border-style: solid;
-    border-width: 1px;
+.navbar-pf {
+
+  .applauncher-pf {
+
+    .open > a,
+    .open > a:focus,
+    .open > a:hover {
+      color: @navbar-pf-active-color;
+      background-color: @navbar-pf-navbar-nav-active-bg-color;
+    }
+
+    .dropdown-toggle {
+      color: @color-pf-black-300;
+      background-color: inherit;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .dropdown-toggle {
+      padding-left: 20px;
+      border-width: 0;
+      display: block;
+    }
+
+    .applauncher-pf-icon {
+      padding-right:4px;
+    }
+
+    .applauncher-pf-title {
+      display: inline;
+    }
+
+    .applauncher-pf-entry {
+      display: block;
+      text-align: left;
+      min-width: inherit;
+      width: auto;
+    }
+
+    .applauncher-pf-link {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .applauncher-pf-link-icon {
+      display: none;
+    }
+
+    .applauncher-pf-link-title {
+      overflow: hidden;
+    }
+
+    @media (min-width: @screen-sm-min) {
+
+      .open > a,
+      .open > a:focus,
+      .open > a:hover {
+        border-left: 1px solid @navbar-pf-navbar-utility-border-color;
+      }
+
+      .dropdown-toggle {
+        border-left: 1px solid @navbar-pf-navbar-utility-border-color;
+        padding: 7px 10px;
+        line-height: 1;
+      }
+
+      .applauncher-pf-icon {
+        padding: 0;
+      }
+
+      //Apply mixin
+      .applauncher-pf;
+    }
+  }
 }
 
-.pf-application-launcher-entry:hover {
-    border-color: #bbb;
-    border-style: solid;
-    border-width: 1px;
-    a {
-        color: #0088ce;
-        text-decoration:none;
-    }
-}
-
-
-
-.pf-application-launcher {
-    .dropdown-menu {
-        padding: 9px;
-        left: 8px;
-        margin-top: 11px;
-        min-width: 220px;
-        &.dropdown-menu-right {
-            left: auto;
-            right: -2px;
-            &:after,
-            &:before {
-                left: auto;
-                right: 6px;
-            }
-        }
-        &:after,
-        &:before {
-            border-bottom-color: #bbb;
-            border-bottom-style: solid;
-            border-bottom-width: 10px;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            content: "";
-            display: inline-block;
-            left: 6px;
-            position: absolute;
-            top: -11px;
-        }
-        &:after {
-            border-bottom-color: #fff;
-            top: -10px;
-        }
-    }
-    &.dropup .dropdown-menu {
-        margin-bottom: 11px;
-        margin-top: 0;
-        &:after,
-        &:before {
-            border-bottom: none;
-            border-top-color: #bbb;
-            border-top-style: solid;
-            border-top-width: 10px;
-            bottom: -11px;
-            top: auto;
-        }
-        &:after {
-            border-top-color: #fff;
-            bottom: -10px;
-        }
-    }
-}
