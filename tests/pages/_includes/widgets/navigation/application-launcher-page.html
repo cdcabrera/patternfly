@@ -15,7 +15,9 @@
     $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
 
     // initialize tooltips
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({
+      container: 'body'
+    });
   });
 </script>
 
