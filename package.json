@@ -70,7 +70,7 @@
   "scripts": {
     "test": "grunt karma",
     "build": "grunt build",
-    "jekyll": "ruby --version || echo \"Ruby required\"; bundler -v || gem install bundler; bundle check || bundle install; set -e",
+    "jekyll": "ruby --version || echo \"Ruby required\"; bundler -v || gem install bundler; bundle check || bundle install || echo \"Bundler required\"; set -e",
     "start": "npm run build; grunt server & open http://localhost:9000",
     "postinstall": "npm run jekyll"
   },
