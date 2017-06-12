@@ -27,3 +27,21 @@ patternfly.spec
 
 # Ignore Desktop Services Store
 .DS_Store
+
+# Ignore repo files and directories
+/.github
+/src
+/tests
+.bowerrc
+.codeclimate.yml
+.editorconfig
+.htmlhintrc
+.nsprc
+.stylelintrc
+.travis.yml
+bower.json
+eslint.yaml
+Gemfile
+Gemfile.lock
+Gruntfile.js
+karma.conf.js
