@@ -354,11 +354,11 @@
               <span class="card-pf-utilization-card-details-line-2">of 1000 MHz</span>
             </span>
                 </p>
-                <div id="chart-pf-donut-1"></div>
+                <div id="chart-pf-donut-2"></div>
                 <div class="chart-pf-sparkline" id="chart-pf-sparkline-1"></div>
                 <script>
                   var donutConfig = $().c3ChartDefaults().getDefaultDonutConfig('A');
-                  donutConfig.bindto = '#chart-pf-donut-1';
+                  donutConfig.bindto = '#chart-pf-donut-2';
                   donutConfig.color =  {
                     pattern: ["#cc0000","#D1D1D1"]
                   };
@@ -382,7 +382,7 @@
                   };
 
                   var chart1 = c3.generate(donutConfig);
-                  var donutChartTitle = d3.select("#chart-pf-donut-1").select('text.c3-chart-arcs-title');
+                  var donutChartTitle = d3.select("#chart-pf-donut-2").select('text.c3-chart-arcs-title');
                   donutChartTitle.text("");
                   donutChartTitle.insert('tspan').text("950").classed('donut-title-big-pf', true).attr('dy', 0).attr('x', 0);
                   donutChartTitle.insert('tspan').text("MHz Used").classed('donut-title-small-pf', true).attr('dy', 20).attr('x', 0);
@@ -407,11 +407,11 @@
               <span class="card-pf-utilization-card-details-line-2">of 432 GB</span>
             </span>
                 </p>
-                <div id="chart-pf-donut-2"></div>
+                <div class="chart-pf-donut-20"></div>
                 <div class="chart-pf-sparkline" id="chart-pf-sparkline-2"></div>
                 <script>
                   var donutConfig = $().c3ChartDefaults().getDefaultDonutConfig('A');
-                  donutConfig.bindto = '#chart-pf-donut-2';
+                  donutConfig.bindto = '.chart-pf-donut-20';
                   donutConfig.color =  {
                     pattern: ["#3f9c35","#D1D1D1"]
                   };
@@ -435,7 +435,7 @@
                   };
 
                   var chart3 = c3.generate(donutConfig);
-                  var donutChartTitle = d3.select("#chart-pf-donut-2").select('text.c3-chart-arcs-title');
+                  var donutChartTitle = d3.select(".chart-pf-donut-20").select('text.c3-chart-arcs-title');
                   donutChartTitle.text("");
                   donutChartTitle.insert('tspan').text("176").classed('donut-title-big-pf', true).attr('dy', 0).attr('x', 0);
                   donutChartTitle.insert('tspan').text("GB Used").classed('donut-title-small-pf', true).attr('dy', 20).attr('x', 0);
