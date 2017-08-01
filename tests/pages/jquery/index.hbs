@@ -3,8 +3,13 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.21.0/css/patternfly.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.21.0/css/patternfly-additions.css">
   <link rel="stylesheet" type="text/css" href="src/jquery-showcase.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-combobox/1.1.8/js/bootstrap-combobox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
@@ -13,48 +18,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-treeview/1.2.0/bootstrap-treeview.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
   <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/select/1.2.2/js/dataTables.select.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+
+
   <script src="../../js/patternfly.js"></script>
   <script src="../../js/patternfly-settings.min.js"></script>
+  <script src="../../js/patternfly-functions.min.js"></script>
+
   <script src="../../js/patternfly.dataTables.pfEmpty.min.js"></script>
   <script src="../../js/patternfly.dataTables.pfFilter.min.js"></script>
   <script src="../../js/patternfly.dataTables.pfPagination.min.js"></script>
   <script src="../../js/patternfly.dataTables.pfResize.min.js"></script>
   <script src="../../js/patternfly.dataTables.pfSelect.min.js"></script>
-  <script src="../../js/patternfly-functions.min.js"></script>
-  <script src="src/accordion.js"></script>
-  <script src="src/aggregate-card.js"></script>
-  <script src="src/application-launcher.js"></script>
-  <script src="src/bootstrap-combobox.js"></script>
-  <script src="src/bootstrap-datepicker.js"></script>
-  <script src="src/bootstrap-select.js"></script>
-  <script src="src/bootstrap-switch.js"></script>
-  <script src="src/bootstrap-touchspin.js"></script>
-  <script src="src/bootstrap-treeview.js"></script>
-  <script src="src/cardview.js"></script>
-  <script src="src/count-remaining-char.js"></script>
-  <script src="src/horizontal-drawer.js"></script>
-  <script src="src/horizontal-nav.js"></script>
-  <script src="src/list.js"></script>
-  <script src="src/listview.js"></script>
-  <script src="src/listview-rows.js"></script>
-  <script src="src/popover.js"></script>
-  <script src="src/progressbars.js"></script>
-  <script src="src/search.js"></script>
-  <script src="src/tableview.js"></script>
-  <script src="src/timepicker.js"></script>
-  <script src="src/treegridtable.js"></script>
-  <script src="src/toolbar.js"></script>
-  <script src="src/tooltip.js"></script>
-  <script src="src/vertical-drawer.js"></script>
-  <script src="src/vertical-nav.js"></script>
-  <script src="src/utilization-barchart.js"></script>
-  <script src="src/wizard.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -709,5 +690,41 @@
         </div>
       </div>
     </div>
+
+
+    <!--<script src="src/horizontal-nav.js"></script>-->
+    <script src="src/horizontal-drawer.js"></script>
+    <script src="src/count-remaining-char.js"></script>
+
+    <!--<script src="src/utilization-barchart.js"></script>
+
+    <script src="src/accordion.js"></script>
+    <script src="src/aggregate-card.js"></script>
+    <script src="src/application-launcher.js"></script>
+    <script src="src/bootstrap-combobox.js"></script>
+    <script src="src/bootstrap-datepicker.js"></script>
+    <script src="src/bootstrap-select.js"></script>
+    <script src="src/bootstrap-switch.js"></script>
+    <script src="src/bootstrap-touchspin.js"></script>
+    <script src="src/bootstrap-treeview.js"></script>
+    <script src="src/cardview.js"></script>
+
+    <script src="src/horizontal-drawer.js"></script>
+
+    <script src="src/list.js"></script>
+    <script src="src/listview.js"></script>
+    <script src="src/listview-rows.js"></script>
+    <script src="src/popover.js"></script>
+    <script src="src/progressbars.js"></script>
+    <script src="src/search.js"></script>
+    <script src="src/tableview.js"></script>
+    <script src="src/timepicker.js"></script>
+    <script src="src/treegridtable.js"></script>
+    <script src="src/toolbar.js"></script>
+    <script src="src/tooltip.js"></script>
+    <script src="src/vertical-drawer.js"></script>
+    <script src="src/vertical-nav.js"></script>
+    <script src="src/utilization-barchart.js"></script>
+    <script src="src/wizard.js"></script>-->
 </body>
 </html>
