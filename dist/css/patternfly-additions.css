@@ -3164,6 +3164,9 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   stroke: #d1d1d1;
   stroke-width: 1px;
 }
+pf-c3-chart {
+  display: block;
+}
 .pct-donut-chart-pf .pct-donut-chart-pf-block .pct-donut-chart-pf-label {
   display: block;
 }
