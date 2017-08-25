@@ -96,10 +96,6 @@
   }
 }
 
-pf-c3-chart {
-  display: block;
-}
-
 .pct-donut-chart-pf {
 
   .pct-donut-chart-pf-label {
@@ -114,10 +110,11 @@ pf-c3-chart {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
 
-    pf-c3-chart {
-      display: inline-block;
-    }
+  &.pct-donut-chart-pf-left,
+  &.pct-donut-chart-pf-right {
+    display: inline-flex;
   }
 
   &.pct-donut-chart-pf-left,

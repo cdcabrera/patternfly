@@ -3164,9 +3164,6 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   stroke: #d1d1d1;
   stroke-width: 1px;
 }
-pf-c3-chart {
-  display: block;
-}
 .pct-donut-chart-pf .pct-donut-chart-pf-label {
   display: block;
 }
@@ -3183,11 +3180,10 @@ pf-c3-chart {
   -ms-flex-align: center;
       align-items: center;
 }
-.pct-donut-chart-pf.pct-donut-chart-pf-left pf-c3-chart,
-.pct-donut-chart-pf.pct-donut-chart-pf-right pf-c3-chart,
-.pct-donut-chart-pf .pct-donut-chart-pf-left pf-c3-chart,
-.pct-donut-chart-pf .pct-donut-chart-pf-right pf-c3-chart {
-  display: inline-block;
+.pct-donut-chart-pf.pct-donut-chart-pf-left,
+.pct-donut-chart-pf.pct-donut-chart-pf-right {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .pct-donut-chart-pf.pct-donut-chart-pf-left,
 .pct-donut-chart-pf .pct-donut-chart-pf-left {
