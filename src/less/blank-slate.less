@@ -24,6 +24,16 @@
     margin-top: @line-height-computed;
   }
   .blank-slate-pf-secondary-action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: @line-height-computed;
+    button {
+      @media (min-width: @screen-xs-min) {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      margin: 2px;
+    }
   }
 }
