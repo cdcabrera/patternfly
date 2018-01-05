@@ -31,7 +31,12 @@
     button {
       @media (min-width: $screen-xs-min) {
         margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 5px;
         margin-top: 0;
+        &:last-of-type {
+          margin-right: 0;
+        }
       }
       margin: 2px;
     }
